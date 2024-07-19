@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Glory: 국가의 영광</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>The Glory: 국가의 영광</h1>
+    <div class="resource">
+        <p>경제력: <span id="economic-power">15</span></p>
+        <button onclick="changeEconomicPower(1)">▲</button>
+        <button onclick="changeEconomicPower(-1)">▼</button>
+    </div>
+    <div class="resource">
+        <p>군사력: <span id="military-power">2</span></p>
+        <button onclick="changeMilitaryPower(1)">▲</button>
+        <button onclick="changeMilitaryPower(-1)">▼</button>
+    </div>
+    <div class="actions">
+        <button onclick="calculateWage()">월급</button>
+        <button onclick="warVictory()">승</button>
+        <button onclick="warDefeat()">패</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
